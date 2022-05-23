@@ -36,6 +36,7 @@ Any new .svelte components must be exported from /src/index.ts.
 
 ```js
 import PlaceholderComponent from './PlaceholderComponent.svelte';
+import SecondComponent from './SecondComponent.svelte';
 
-export default PlaceholderComponent;
+export {PlaceholderComponent, SecondComponent};
 ```
