@@ -24,7 +24,18 @@ Build library for reuse.
 npm run build-lib
 ```
 ---
- 
+
+## Using the component
+
+To import the component in another Svelte app, you can either [publish to the NPM global repository](https://docs.npmjs.com/cli/v7/commands/npm-publish) or reference the package locally.
+
+Note: the component will be imported in your /node_modules folder using the name specified in package.json, so make sure to change it before running npm install.
+
+```bash
+npm install ../my-svelte-component/ -D
+```
+
+
 ## Exporting additional components
 
 Any new .svelte components must be exported from /src/index.ts.
